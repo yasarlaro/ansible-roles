@@ -9,7 +9,7 @@ The Ansible roles in the repository can be inherited by different project. There
 
 ## Authors
 
-* **Onur Yasarlar** - *Initial work* - [yasarlaro](https://github.com/yasarlaro)
+* **Onur Yasarlar** - [yasarlaro](https://github.com/yasarlaro)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
