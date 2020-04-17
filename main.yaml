@@ -1,0 +1,7 @@
+---
+- name: Main Play
+  hosts: all
+  roles:
+    - name: yasarlaro.kvm
+      tags: 
+        - kvm
