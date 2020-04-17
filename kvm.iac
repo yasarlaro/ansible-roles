@@ -6,25 +6,10 @@ node (){
 
     stage('Checkout from SCM') {
         dir ('roles'){
-            checkout(
-                [
-                    $class: 'GitSCM', 
-                    branches: [
-                        [
-                            name: '*/master'
-                        ]
-                    ], 
-                    doGenerateSubmoduleConfigurations: false, 
-                    userRemoteConfigs: [
-                        [
-                            credentialsId: '834406f6-b171-4518-85c2-a75b4e13d388', 
-                            url: 'https://github.com/yasarlaro/ansible-roles.git'
-                        ]
-                    ]
-                ]
-            )
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+                userRemoteConfigs: [[ url: 'https://github.com/yasarlaro/ansible-roles.git']]])
         }           
-    }//stage
+    }
 
     stage('Installting KVM') {
         dir('roles') {
