@@ -32,7 +32,8 @@ node (){
                 playbook: 'main.yaml',
                 inventory: '${HOST_IP},',
                 credentialsId: 'root_default',
-                tags: 'kvm'
+                tags: 'kvm',
+            )
         }
     }
 }
